@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-sh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1A0A02"/>
+      <stop offset="35%"  stop-color="#5C1E05"/>
+      <stop offset="65%"  stop-color="#A0430A"/>
+      <stop offset="100%" stop-color="#C46818"/>
+    </linearGradient>
+    <radialGradient id="sun-halo" cx="38%" cy="62%" r="30%">
+      <stop offset="0%"   stop-color="#F4A830" stop-opacity="0.55"/>
+      <stop offset="60%"  stop-color="#E06010" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#E06010" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lantern-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFD070" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF8020" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="500" fill="url(#sky-sh)"/>
+  <rect width="1200" height="500" fill="url(#sun-halo)"/>
+
+  <!-- Setting sun -->
+  <circle cx="456" cy="310" r="48" fill="#F4A830" opacity="0.72"/>
+  <circle cx="456" cy="310" r="38" fill="#FAC84A" opacity="0.65"/>
+
+  <!-- Distant mountains (silhouette) -->
+  <path d="M0,340 L80,260 L160,295 L270,210 L390,265 L500,200 L620,250 L740,195 L880,240 L1020,195 L1130,220 L1200,205 L1200,500 L0,500Z"
+        fill="#38150A" opacity="0.75"/>
+
+  <!-- Mid hills -->
+  <path d="M0,390 L120,335 L240,365 L360,305 L480,348 L600,292 L720,338 L840,285 L960,325 L1080,285 L1200,308 L1200,500 L0,500Z"
+        fill="#240D04" opacity="0.9"/>
+
+  <!-- City gate (大城楼) center ~x=600 -->
+  <!-- Gate base / wall -->
+  <rect x="480" y="220" width="240" height="140" fill="#18090A" opacity="0.92"/>
+  <!-- Gate arch opening -->
+  <path d="M540,360 L540,285 Q600,260 660,285 L660,360Z" fill="#3A1608" opacity="0.95"/>
+  <!-- Gate tower platform -->
+  <rect x="465" y="195" width="270" height="30" rx="1" fill="#6A2508"/>
+  <rect x="455" y="185" width="290" height="14" rx="1" fill="#8B3510"/>
+  <!-- Tower body -->
+  <rect x="495" y="100" width="210" height="90" fill="#1E0C08" opacity="0.95"/>
+  <!-- Main roof of tower -->
+  <path d="M468,100 Q600,52 732,100 L724,114 Q600,68 476,114Z" fill="#C4680A"/>
+  <!-- Roof upturned eave tips -->
+  <path d="M466,98 C458,90 448,78 455,70" fill="none" stroke="#C4680A" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M734,98 C742,90 752,78 745,70" fill="none" stroke="#C4680A" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Upper smaller roof -->
+  <path d="M504,100 Q600,62 696,100 L690,112 Q600,74 510,112Z" fill="#D47814"/>
+  <path d="M502,98 C496,92 488,82 494,76" fill="none" stroke="#D47814" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M698,98 C704,92 712,82 706,76" fill="none" stroke="#D47814" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Tower windows -->
+  <rect x="540" y="125" width="30" height="35" rx="3" fill="#3A1608"/>
+  <rect x="630" y="125" width="30" height="35" rx="3" fill="#3A1608"/>
+  <rect x="585" y="120" width="30" height="38" rx="3" fill="#4A2010"/>
+
+  <!-- Wall battlements -->
+  <rect x="480" y="195" width="16" height="14" fill="#6A2508"/>
+  <rect x="504" y="195" width="16" height="14" fill="#6A2508"/>
+  <rect x="528" y="195" width="16" height="14" fill="#6A2508"/>
+  <rect x="672" y="195" width="16" height="14" fill="#6A2508"/>
+  <rect x="696" y="195" width="16" height="14" fill="#6A2508"/>
+  <rect x="720" y="195" width="16" height="14" fill="#6A2508"/>
+
+  <!-- Wall extending left and right -->
+  <rect x="0" y="330" width="480" height="35" fill="#18090A" opacity="0.88"/>
+  <rect x="720" y="330" width="480" height="35" fill="#18090A" opacity="0.88"/>
+
+  <!-- Lanterns hanging from gate and around -->
+  <!-- Main gate lanterns -->
+  <ellipse cx="540" cy="175" rx="8" ry="11" fill="#E8280A" opacity="0.95"/>
+  <ellipse cx="540" cy="175" rx="8" ry="11" fill="url(#lantern-glow)" filter="url(#blur-sm)"/>
+  <line x1="540" y1="164" x2="540" y2="158" stroke="#8B3510" stroke-width="1.5"/>
+  <line x1="540" y1="186" x2="540" y2="192" stroke="#D4700A" stroke-width="1"/>
+
+  <ellipse cx="660" cy="175" rx="8" ry="11" fill="#E8280A" opacity="0.95"/>
+  <ellipse cx="660" cy="175" rx="8" ry="11" fill="url(#lantern-glow)" filter="url(#blur-sm)"/>
+  <line x1="660" y1="164" x2="660" y2="158" stroke="#8B3510" stroke-width="1.5"/>
+  <line x1="660" y1="186" x2="660" y2="192" stroke="#D4700A" stroke-width="1"/>
+
+  <ellipse cx="600" cy="168" rx="9" ry="12" fill="#F03A0A" opacity="0.98"/>
+  <ellipse cx="600" cy="168" rx="9" ry="12" fill="url(#lantern-glow)" filter="url(#blur-sm)"/>
+  <line x1="600" y1="156" x2="600" y2="148" stroke="#8B3510" stroke-width="1.5"/>
+
+  <!-- Strings of lanterns – left side -->
+  <path d="M480,260 Q380,240 280,255" fill="none" stroke="#5A2010" stroke-width="1" opacity="0.7"/>
+  <ellipse cx="450" cy="258" rx="5" ry="7" fill="#D42808" opacity="0.88"/>
+  <ellipse cx="420" cy="252" rx="5" ry="7" fill="#F05010" opacity="0.82"/>
+  <ellipse cx="388" cy="249" rx="5" ry="7" fill="#D42808" opacity="0.78"/>
+  <ellipse cx="356" cy="252" rx="5" ry="7" fill="#F05010" opacity="0.72"/>
+  <ellipse cx="324" cy="255" rx="5" ry="7" fill="#D42808" opacity="0.68"/>
+  <ellipse cx="295" cy="256" rx="5" ry="7" fill="#F05010" opacity="0.62"/>
+
+  <!-- Strings of lanterns – right side -->
+  <path d="M720,260 Q820,240 920,255" fill="none" stroke="#5A2010" stroke-width="1" opacity="0.7"/>
+  <ellipse cx="750" cy="258" rx="5" ry="7" fill="#D42808" opacity="0.88"/>
+  <ellipse cx="782" cy="252" rx="5" ry="7" fill="#F05010" opacity="0.82"/>
+  <ellipse cx="814" cy="249" rx="5" ry="7" fill="#D42808" opacity="0.78"/>
+  <ellipse cx="846" cy="252" rx="5" ry="7" fill="#F05010" opacity="0.72"/>
+  <ellipse cx="878" cy="255" rx="5" ry="7" fill="#D42808" opacity="0.68"/>
+  <ellipse cx="908" cy="256" rx="5" ry="7" fill="#F05010" opacity="0.62"/>
+
+  <!-- Market stalls – left area -->
+  <!-- Stall 1 awning -->
+  <path d="M120,370 L120,330 L240,330 L240,370Z" fill="#8B2808" opacity="0.82"/>
+  <rect x="118" y="328" width="124" height="6" rx="1" fill="#C44010"/>
+  <rect x="125" y="350" width="8" height="30" fill="#4A1808"/>
+  <rect x="225" y="350" width="8" height="30" fill="#4A1808"/>
+
+  <!-- Stall 2 awning -->
+  <path d="M820,365 L820,328 L940,328 L940,365Z" fill="#8B2808" opacity="0.78"/>
+  <rect x="818" y="326" width="124" height="6" rx="1" fill="#C44010"/>
+  <rect x="826" y="348" width="8" height="28" fill="#4A1808"/>
+  <rect x="925" y="348" width="8" height="28" fill="#4A1808"/>
+
+  <!-- Crowd silhouettes (left of gate) -->
+  <ellipse cx="200" cy="382" rx="12" ry="15" fill="#0E0504" opacity="0.88"/>
+  <rect x="194" y="394" width="12" height="24" fill="#0E0504" opacity="0.88"/>
+  <ellipse cx="240" cy="378" rx="10" ry="13" fill="#160806" opacity="0.82"/>
+  <rect x="234" y="390" width="10" height="22" fill="#160806" opacity="0.82"/>
+  <ellipse cx="278" cy="380" rx="11" ry="14" fill="#0E0504" opacity="0.75"/>
+  <rect x="272" y="392" width="10" height="20" fill="#0E0504" opacity="0.75"/>
+  <ellipse cx="315" cy="377" rx="10" ry="13" fill="#160806" opacity="0.7"/>
+  <rect x="309" y="388" width="10" height="20" fill="#160806" opacity="0.7"/>
+
+  <!-- Crowd silhouettes (right of gate) -->
+  <ellipse cx="900" cy="382" rx="12" ry="15" fill="#0E0504" opacity="0.88"/>
+  <rect x="894" y="394" width="12" height="24" fill="#0E0504" opacity="0.88"/>
+  <ellipse cx="940" cy="378" rx="10" ry="13" fill="#160806" opacity="0.82"/>
+  <rect x="934" y="390" width="10" height="22" fill="#160806" opacity="0.82"/>
+  <ellipse cx="978" cy="380" rx="11" ry="14" fill="#0E0504" opacity="0.75"/>
+  <rect x="972" y="392" width="10" height="20" fill="#0E0504" opacity="0.75"/>
+
+  <!-- Near foreground -->
+  <path d="M0,450 L150,420 L300,445 L480,415 L640,440 L800,412 L950,438 L1100,416 L1200,430 L1200,500 L0,500Z"
+        fill="#0A0402" opacity="0.97"/>
+
+  <!-- Glowing embers / sparks in sky -->
+  <circle cx="350" cy="180" r="1.5" fill="#FFB030" opacity="0.7"/>
+  <circle cx="410" cy="155" r="1.2" fill="#FFA020" opacity="0.6"/>
+  <circle cx="480" cy="168" r="1.0" fill="#FFB030" opacity="0.5"/>
+  <circle cx="750" cy="165" r="1.5" fill="#FFB030" opacity="0.65"/>
+  <circle cx="820" cy="148" r="1.2" fill="#FFA020" opacity="0.55"/>
+  <circle cx="175" cy="200" r="1.0" fill="#FFB030" opacity="0.45"/>
+  <circle cx="1050" cy="195" r="1.3" fill="#FFB030" opacity="0.5"/>
+
+  <!-- Light mist near ground -->
+  <ellipse cx="200"  cy="368" rx="120" ry="14" fill="#C46018" opacity="0.06"/>
+  <ellipse cx="1000" cy="372" rx="100" ry="12" fill="#C46018" opacity="0.055"/>
+</svg>

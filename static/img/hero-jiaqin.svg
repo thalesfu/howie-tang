@@ -1,0 +1,161 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-jq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0E1B2E"/>
+      <stop offset="40%"  stop-color="#1C3048"/>
+      <stop offset="75%"  stop-color="#2E4A62"/>
+      <stop offset="100%" stop-color="#3A5570"/>
+    </linearGradient>
+    <radialGradient id="moon-jq" cx="22%" cy="20%" r="20%">
+      <stop offset="0%"   stop-color="#C8DCF0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#C8DCF0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1E3A54"/>
+      <stop offset="100%" stop-color="#122436"/>
+    </linearGradient>
+    <radialGradient id="blossom-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#F0C8D0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F0C8D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="500" fill="url(#sky-jq)"/>
+  <rect width="1200" height="500" fill="url(#moon-jq)"/>
+
+  <!-- Moon -->
+  <circle cx="264" cy="100" r="42" fill="#E8F0F8" opacity="0.92"/>
+  <circle cx="250" cy="90"  r="38" fill="#1C3048" opacity="0.18"/>
+
+  <!-- Stars (sparse, soft) -->
+  <circle cx="120"  cy="65"  r="1.0" fill="#C8DCF0" opacity="0.8"/>
+  <circle cx="380"  cy="45"  r="0.9" fill="#C8DCF0" opacity="0.65"/>
+  <circle cx="540"  cy="72"  r="1.2" fill="#C8DCF0" opacity="0.7"/>
+  <circle cx="700"  cy="38"  r="0.8" fill="#C8DCF0" opacity="0.6"/>
+  <circle cx="860"  cy="58"  r="1.1" fill="#C8DCF0" opacity="0.75"/>
+  <circle cx="1040" cy="42"  r="0.9" fill="#C8DCF0" opacity="0.65"/>
+  <circle cx="1155" cy="78"  r="1.0" fill="#C8DCF0" opacity="0.55"/>
+  <circle cx="460"  cy="110" r="0.8" fill="#C8DCF0" opacity="0.5"/>
+  <circle cx="950"  cy="88"  r="0.9" fill="#C8DCF0" opacity="0.5"/>
+
+  <!-- Far soft mountains -->
+  <path d="M0,320 L100,245 L200,278 L330,205 L460,258 L580,198 L700,242 L820,196 L950,238 L1080,200 L1200,222 L1200,500 L0,500Z"
+        fill="#1A304A" opacity="0.55"/>
+
+  <!-- Mid mountains with soft haze -->
+  <path d="M0,370 L130,310 L250,345 L380,280 L510,325 L640,268 L770,312 L890,265 L1020,305 L1140,268 L1200,285 L1200,500 L0,500Z"
+        fill="#162840" opacity="0.72"/>
+
+  <!-- Pavilion (亭) center – small family pavilion -->
+  <!-- Platform -->
+  <rect x="555" y="258" width="90" height="12" rx="1" fill="#7A5A28"/>
+  <rect x="548" y="267" width="104" height="6" rx="1"  fill="#5E4618"/>
+  <!-- Pillars -->
+  <rect x="563" y="228" width="7"  height="42" fill="#0A1E32"/>
+  <rect x="630" y="228" width="7"  height="42" fill="#0A1E32"/>
+  <!-- Roof -->
+  <path d="M537,230 Q600,190 663,230 L657,240 Q600,202 543,240Z" fill="#8A6A28"/>
+  <path d="M535,228 C529,222 521,212 527,206" fill="none" stroke="#8A6A28" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M665,228 C671,222 679,212 673,206" fill="none" stroke="#8A6A28" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Upper roof -->
+  <path d="M552,205 Q600,170 648,205 L643,214 Q600,180 557,214Z" fill="#A07A30"/>
+  <path d="M550,203 C545,197 538,189 544,183" fill="none" stroke="#A07A30" stroke-width="2" stroke-linecap="round"/>
+  <path d="M650,203 C655,197 662,189 656,183" fill="none" stroke="#A07A30" stroke-width="2" stroke-linecap="round"/>
+  <!-- Family silhouettes inside pavilion -->
+  <ellipse cx="590" cy="244" rx="6"  ry="7"  fill="#071422"/>
+  <rect x="587" y="250" width="6"   height="18" fill="#071422"/>
+  <ellipse cx="610" cy="246" rx="5"  ry="6.5" fill="#071422"/>
+  <rect x="607" y="251" width="6"   height="16" fill="#071422"/>
+  <!-- Small child -->
+  <ellipse cx="600" cy="252" rx="4"  ry="5"  fill="#071422"/>
+  <rect x="598" y="256" width="5"   height="12" fill="#071422"/>
+
+  <!-- Arched bridge over pond -->
+  <!-- Bridge arch -->
+  <path d="M390,360 Q440,325 490,360" fill="none" stroke="#5A4018" stroke-width="8" opacity="0.88"/>
+  <path d="M390,362 Q440,327 490,362" fill="none" stroke="#7A5A28" stroke-width="3" opacity="0.6"/>
+  <!-- Bridge railings -->
+  <path d="M394,354 Q440,320 486,354" fill="none" stroke="#8A6A38" stroke-width="2" opacity="0.7"/>
+  <!-- Bridge pillars -->
+  <rect x="388" y="360" width="8" height="28" fill="#4A3010" opacity="0.8"/>
+  <rect x="484" y="360" width="8" height="28" fill="#4A3010" opacity="0.8"/>
+  <!-- Person on bridge -->
+  <ellipse cx="440" cy="333" rx="5" ry="6"  fill="#071422"/>
+  <rect x="438" y="338" width="5" height="15" fill="#071422"/>
+  <!-- Child on bridge (smaller) -->
+  <ellipse cx="455" cy="336" rx="4" ry="5"  fill="#071422"/>
+  <rect x="453" y="340" width="4" height="12" fill="#071422"/>
+
+  <!-- Pond / water -->
+  <ellipse cx="530" cy="400" rx="340" ry="72" fill="url(#water)" opacity="0.78"/>
+  <!-- Water ripples -->
+  <ellipse cx="500" cy="405" rx="45" ry="8" fill="none" stroke="#2A5070" stroke-width="1" opacity="0.4"/>
+  <ellipse cx="560" cy="418" rx="30" ry="5" fill="none" stroke="#2A5070" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="440" cy="415" rx="25" ry="4" fill="none" stroke="#2A5070" stroke-width="1" opacity="0.35"/>
+  <!-- Moon reflection in pond -->
+  <ellipse cx="400" cy="410" rx="28" ry="12" fill="#C8DCF0" opacity="0.14"/>
+
+  <!-- Lotus leaves on pond -->
+  <ellipse cx="430" cy="420" rx="18" ry="7" fill="#1A4A28" opacity="0.75"/>
+  <ellipse cx="468" cy="432" rx="14" ry="5" fill="#1A4A28" opacity="0.65"/>
+  <ellipse cx="510" cy="425" rx="16" ry="6" fill="#224A2A" opacity="0.7"/>
+  <ellipse cx="560" cy="430" rx="12" ry="5" fill="#1A4A28" opacity="0.6"/>
+  <ellipse cx="605" cy="420" rx="18" ry="7" fill="#224A2A" opacity="0.72"/>
+  <!-- Lotus flowers -->
+  <ellipse cx="445" cy="415" rx="5" ry="7" fill="#E8A8B8" opacity="0.72"/>
+  <ellipse cx="528" cy="418" rx="5" ry="7" fill="#F0B8C4" opacity="0.65"/>
+  <ellipse cx="612" cy="413" rx="5" ry="7" fill="#E8A8B8" opacity="0.6"/>
+
+  <!-- Willow tree – left -->
+  <!-- Trunk -->
+  <rect x="142" y="280" width="9"   height="160" fill="#0E1E30" opacity="0.88"/>
+  <!-- Drooping branches -->
+  <path d="M146,295 C130,320 118,350 122,380" fill="none" stroke="#1A3828" stroke-width="2.5" opacity="0.75"/>
+  <path d="M146,310 C160,340 162,370 154,400" fill="none" stroke="#1A3828" stroke-width="2.5" opacity="0.7"/>
+  <path d="M146,300 C108,330 96,365 102,395"  fill="none" stroke="#1A3828" stroke-width="2" opacity="0.65"/>
+  <path d="M146,320 C170,352 175,385 168,415"  fill="none" stroke="#1A3828" stroke-width="2" opacity="0.65"/>
+  <path d="M146,305 C122,335 116,360 112,388"  fill="none" stroke="#163022" stroke-width="1.5" opacity="0.58"/>
+  <path d="M146,315 C188,345 194,380 185,410"  fill="none" stroke="#163022" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- Cherry blossom tree – right -->
+  <rect x="990" y="260" width="10"  height="180" fill="#0E1E30" opacity="0.85"/>
+  <rect x="990" y="280" width="50"  height="7"   fill="#0E1E30" opacity="0.75"/>
+  <rect x="940" y="290" width="50"  height="7"   fill="#0E1E30" opacity="0.68"/>
+  <rect x="990" y="300" width="65"  height="7"   fill="#0E1E30" opacity="0.6"/>
+  <rect x="930" y="308" width="60"  height="6"   fill="#0E1E30" opacity="0.55"/>
+  <!-- Blossoms -->
+  <circle cx="1010" cy="278" r="14" fill="#F0C8D4" opacity="0.62"/>
+  <circle cx="1040" cy="285" r="12" fill="#E8B8C4" opacity="0.58"/>
+  <circle cx="968"  cy="288" r="13" fill="#F0C8D4" opacity="0.6"/>
+  <circle cx="1000" cy="298" r="16" fill="#F0C8D4" opacity="0.55"/>
+  <circle cx="960"  cy="305" r="14" fill="#E8B8C4" opacity="0.52"/>
+  <circle cx="1048" cy="305" r="11" fill="#F0C8D4" opacity="0.5"/>
+  <circle cx="930"  cy="295" r="12" fill="#E8B8C4" opacity="0.48"/>
+  <!-- Falling petals -->
+  <ellipse cx="850" cy="330" rx="3" ry="5" fill="#F0C8D4" opacity="0.45" transform="rotate(-20,850,330)"/>
+  <ellipse cx="880" cy="360" rx="3" ry="5" fill="#E8B8C4" opacity="0.38" transform="rotate(15,880,360)"/>
+  <ellipse cx="1080" cy="310" rx="3" ry="5" fill="#F0C8D4" opacity="0.4"  transform="rotate(-30,1080,310)"/>
+  <ellipse cx="1110" cy="345" rx="3" ry="5" fill="#E8B8C4" opacity="0.35" transform="rotate(10,1110,345)"/>
+  <ellipse cx="760"  cy="350" rx="3" ry="5" fill="#F0C8D4" opacity="0.35" transform="rotate(-15,760,350)"/>
+
+  <!-- Foreground grass / near bank -->
+  <path d="M0,455 L140,430 L300,450 L470,428 L640,448 L800,424 L960,445 L1100,428 L1200,440 L1200,500 L0,500Z"
+        fill="#071422" opacity="0.97"/>
+
+  <!-- Reeds near pond edge -->
+  <rect x="335" y="390" width="3" height="70" fill="#2A4A1A" opacity="0.72"/>
+  <rect x="340" y="385" width="3" height="75" fill="#1E3A14" opacity="0.65"/>
+  <rect x="330" y="395" width="3" height="65" fill="#2A4A1A" opacity="0.6"/>
+  <ellipse cx="337" cy="390" rx="4" ry="7" fill="#3A2808" opacity="0.65"/>
+  <ellipse cx="342" cy="385" rx="4" ry="7" fill="#3A2808" opacity="0.6"/>
+
+  <rect x="685" y="395" width="3" height="65" fill="#2A4A1A" opacity="0.68"/>
+  <rect x="690" y="388" width="3" height="72" fill="#1E3A14" opacity="0.62"/>
+  <ellipse cx="687" cy="393" rx="4" ry="7" fill="#3A2808" opacity="0.62"/>
+  <ellipse cx="692" cy="387" rx="4" ry="7" fill="#3A2808" opacity="0.58"/>
+
+  <!-- Mist over water -->
+  <ellipse cx="530" cy="392" rx="280" ry="18" fill="#C8DCF0" opacity="0.048"/>
+  <ellipse cx="480" cy="386" rx="180" ry="12" fill="#C8DCF0" opacity="0.042"/>
+</svg>

@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<!-- 路线英雄区 -->
+{{ $heroImg := printf "/img/hero-%s.svg" .File.TranslationBaseName }}
+{{ if .Params.hero_image }}{{ $heroImg = .Params.hero_image }}{{ end }}
+{{ $heroClass := "route-hero" }}
+{{ $isLight := false }}
+{{ if eq .Params.hero_overlay "heavy" }}
+  {{ $heroClass = "route-hero route-hero--light-bg" }}
+  {{ $isLight = true }}
+{{ end }}
+{{ $bgStyle := printf "background-image: linear-gradient(to bottom, rgba(12,6,18,0.08) 0%%, rgba(12,6,18,0.22) 45%%, rgba(12,6,18,0.72) 100%%), url('%s');" $heroImg }}
+{{ if $isLight }}
+  {{ $bgStyle = printf "background-image: url('%s');" $heroImg }}
+{{ end }}
+<div class="{{ $heroClass }}" style="{{ $bgStyle | safeCSS }}">
+  <span class="route-hero-emoji">{{ .Params.emoji }}</span>
+  <h1 class="route-hero-title">{{ .Title }}</h1>
+  <p class="route-hero-audience">{{ .Params.audience }}</p>
+  <p class="route-hero-tagline">{{ .Params.tagline }}</p>
+  <div class="route-hero-tags">
+    {{ range .Params.keywords }}<span class="tag">{{ . }}</span>{{ end }}
+  </div>
+</div>
+
+<!-- 全天行程 -->
+<div class="route-schedule">
+  {{ range .Params.schedule }}
+  <div class="schedule-item">
+    <div class="sched-time">
+      <span class="sched-tc">{{ .time_tc }}</span>
+      <span class="sched-m">{{ .time_m }}</span>
+    </div>
+    <div class="sched-body">
+      <span class="sched-emoji">{{ .emoji }}</span>
+      <div class="sched-title">{{ .title }}</div>
+      <p class="sched-desc">{{ .desc }}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<!-- 散场礼 -->
+<div class="gift-box">
+  <span class="gift-label">散场礼</span>
+  <h2 class="gift-title">今日，你带走的不只是纪念品</h2>
+  <p class="gift-content">{{ .Params.gift }}</p>
+</div>
+
+<div style="text-align:center;padding:3rem 2rem;background:var(--parchment)">
+  <a href="/routes/" class="btn btn-outline" style="color:var(--vermillion);border-color:var(--vermillion)">← 返回路线选择</a>
+</div>
+
+{{ end }}

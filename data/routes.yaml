@@ -1,0 +1,35 @@
+items:
+  - name: 长安社交局
+    emoji: "🎭"
+    slug: shehui
+    audience: "18–30岁，朋友聚会·情侣出游"
+    keywords: [出片, 社交, 微醺, 热闹]
+    tagline: 今天，你是长安最靓的仔
+
+  - name: 阖家唐人行
+    emoji: "👪"
+    slug: jiaqin
+    audience: "亲子家庭，6岁以上孩子"
+    keywords: [亲子互动, 趣味, 安全, 有收获]
+    tagline: 带娃穿越，比迪士尼更有料
+
+  - name: 武将校场营
+    emoji: "🏹"
+    slug: wujiang
+    audience: "20–40岁，喜欢运动挑战"
+    keywords: [竞技, 体能, 团队, 热血]
+    tagline: 今日，你是长安城最能打的那个
+
+  - name: 食色大唐派
+    emoji: "🍶"
+    slug: shise
+    audience: "25–45岁，吃货·生活方式爱好者"
+    keywords: [美食, 器物, 慢节奏, 精致]
+    tagline: 用舌头丈量大唐的宽度
+
+  - name: 文人雅士道
+    emoji: "📜"
+    slug: wenren
+    audience: "30岁以上，历史文化爱好者"
+    keywords: [诗词, 书法, 茶道, 沉浸]
+    tagline: 不只是游客，今日你是唐人

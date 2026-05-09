@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="routes-page">
+  <span class="section-label" style="display:block;text-align:center">选择你的路线</span>
+  <h1 class="routes-page-title">五种长安，五种体验</h1>
+  <p class="routes-page-sub">同一座城，不同的玩法</p>
+
+  <div class="routes-list">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="route-list-card">
+      <span class="rlc-emoji">{{ .Params.emoji }}</span>
+      <div class="rlc-name">{{ .Title }}</div>
+      <div class="rlc-audience">{{ .Params.audience }}</div>
+      <div class="rlc-tagline">{{ .Params.tagline }}</div>
+      <div class="rlc-tags">
+        {{ range .Params.keywords }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      <span class="rlc-enter">进入路线 →</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

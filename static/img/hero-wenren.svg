@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-wr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070E1C"/>
+      <stop offset="55%" stop-color="#111E36"/>
+      <stop offset="100%" stop-color="#1E2F4A"/>
+    </linearGradient>
+    <radialGradient id="moon-halo" cx="72%" cy="18%" r="22%">
+      <stop offset="0%" stop-color="#D4B86A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#D4B86A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="star-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8D5A3" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#E8D5A3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="500" fill="url(#sky-wr)"/>
+  <rect width="1200" height="500" fill="url(#moon-halo)"/>
+
+  <!-- Stars -->
+  <circle cx="55"  cy="55"  r="1.2" fill="#D4C9A8" opacity="0.9"/>
+  <circle cx="145" cy="38"  r="0.8" fill="#D4C9A8" opacity="0.7"/>
+  <circle cx="290" cy="72"  r="1.5" fill="#D4C9A8" opacity="0.8"/>
+  <circle cx="440" cy="48"  r="1.0" fill="#D4C9A8" opacity="0.7"/>
+  <circle cx="580" cy="28"  r="1.3" fill="#D4C9A8" opacity="0.9"/>
+  <circle cx="660" cy="65"  r="0.9" fill="#D4C9A8" opacity="0.6"/>
+  <circle cx="1060" cy="45" r="1.5" fill="#D4C9A8" opacity="0.8"/>
+  <circle cx="1155" cy="32" r="1.0" fill="#D4C9A8" opacity="0.7"/>
+  <circle cx="210"  cy="120" r="0.9" fill="#D4C9A8" opacity="0.5"/>
+  <circle cx="370"  cy="95"  r="1.2" fill="#D4C9A8" opacity="0.6"/>
+  <circle cx="750"  cy="42"  r="0.8" fill="#D4C9A8" opacity="0.8"/>
+  <circle cx="840"  cy="78"  r="1.0" fill="#D4C9A8" opacity="0.5"/>
+  <circle cx="1000" cy="90"  r="0.8" fill="#D4C9A8" opacity="0.6"/>
+
+  <!-- Moon -->
+  <circle cx="864" cy="92" r="52" fill="#F0E4C0" opacity="0.95"/>
+  <circle cx="846" cy="80" r="48" fill="#111E36" opacity="0.22"/>
+
+  <!-- Far mountains (mist) -->
+  <path d="M0,370 L90,265 L180,310 L300,215 L440,280 L560,200 L680,258 L800,190 L930,245 L1060,196 L1200,225 L1200,500 L0,500Z"
+        fill="#1A2E4A" opacity="0.65"/>
+
+  <!-- Mid mountains -->
+  <path d="M0,420 L110,330 L220,375 L340,288 L460,338 L590,265 L710,318 L820,258 L950,308 L1070,264 L1200,290 L1200,500 L0,500Z"
+        fill="#12243A" opacity="0.85"/>
+
+  <!-- Pavilion (亭) on mid ridge ~x=590 -->
+  <!-- Platform -->
+  <rect x="560" y="255" width="90" height="14" rx="1" fill="#A8832A"/>
+  <rect x="553" y="265" width="104" height="7"  rx="1" fill="#8A6B22"/>
+  <!-- Pillars -->
+  <rect x="567" y="220" width="8"  height="55" fill="#08172A"/>
+  <rect x="635" y="220" width="8"  height="55" fill="#08172A"/>
+  <!-- Main roof -->
+  <path d="M540,222 Q605,180 670,222 L664,232 Q605,193 546,232Z" fill="#C4972A"/>
+  <path d="M538,220 C532,214 524,203 530,197" fill="none" stroke="#C4972A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M672,220 C678,214 686,203 680,197" fill="none" stroke="#C4972A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Upper roof -->
+  <path d="M556,195 Q605,158 654,195 L649,204 Q605,168 561,204Z" fill="#D4A830"/>
+  <path d="M554,193 C549,187 542,178 548,172" fill="none" stroke="#D4A830" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M656,193 C661,187 668,178 662,172" fill="none" stroke="#D4A830" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Scholar silhouette -->
+  <ellipse cx="604" cy="238" rx="7" ry="8" fill="#06121E"/>
+  <rect x="600" y="245" width="8" height="20" fill="#06121E"/>
+
+  <!-- Distant pagoda (far right mountain) -->
+  <rect x="1065" y="185" width="6" height="72" fill="#08172A" opacity="0.8"/>
+  <path d="M1055,185 Q1068,172 1081,185Z" fill="#C4972A" opacity="0.75"/>
+  <path d="M1057,174 Q1068,162 1079,174Z" fill="#C4972A" opacity="0.65"/>
+  <path d="M1059,163 Q1068,152 1077,163Z" fill="#C4972A" opacity="0.55"/>
+  <path d="M1061,153 Q1068,143 1075,153Z" fill="#C4972A" opacity="0.45"/>
+
+  <!-- Bamboo grove – left -->
+  <rect x="342" y="298" width="5"   height="162" fill="#1B3E2A" opacity="0.92"/>
+  <rect x="341" y="298" width="7"   height="3"   fill="#12301E" opacity="0.85"/>
+  <rect x="341" y="328" width="7"   height="3"   fill="#12301E" opacity="0.85"/>
+  <rect x="341" y="358" width="7"   height="3"   fill="#12301E" opacity="0.85"/>
+  <rect x="341" y="390" width="7"   height="3"   fill="#12301E" opacity="0.85"/>
+  <path d="M347,305 Q376,294 371,310" fill="none" stroke="#1B3E2A" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <path d="M347,335 Q318,322 323,338" fill="none" stroke="#1B3E2A" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <path d="M347,365 Q380,352 375,368" fill="none" stroke="#1B3E2A" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+
+  <rect x="362" y="308" width="4"   height="152" fill="#163622" opacity="0.78"/>
+  <rect x="361" y="315" width="6"   height="3"   fill="#102A18" opacity="0.75"/>
+  <rect x="361" y="348" width="6"   height="3"   fill="#102A18" opacity="0.75"/>
+  <path d="M366,322 Q342,310 344,325" fill="none" stroke="#163622" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+  <path d="M366,355 Q392,342 390,357" fill="none" stroke="#163622" stroke-width="2.5" stroke-linecap="round" opacity="0.72"/>
+
+  <rect x="378" y="302" width="4.5" height="158" fill="#1B3E2A" opacity="0.7"/>
+  <rect x="377" y="320" width="6"   height="3"   fill="#12301E" opacity="0.68"/>
+  <rect x="377" y="355" width="6"   height="3"   fill="#12301E" opacity="0.68"/>
+  <path d="M382,328 Q408,316 406,331" fill="none" stroke="#1B3E2A" stroke-width="2.5" stroke-linecap="round" opacity="0.68"/>
+  <path d="M382,362 Q356,350 358,365" fill="none" stroke="#1B3E2A" stroke-width="2.5" stroke-linecap="round" opacity="0.68"/>
+
+  <!-- Pine tree – right -->
+  <rect x="820" y="325" width="7"   height="125" fill="#08172A" opacity="0.92"/>
+  <path d="M823,252 L782,328 L864,328Z" fill="#0E2A1E" opacity="0.88"/>
+  <path d="M823,278 L786,342 L860,342Z" fill="#0A2218" opacity="0.85"/>
+  <path d="M823,305 L790,362 L856,362Z" fill="#081C12" opacity="0.90"/>
+
+  <!-- Near hills (foreground) -->
+  <path d="M0,458 L170,402 L300,440 L470,392 L620,436 L780,385 L920,425 L1080,392 L1200,412 L1200,500 L0,500Z"
+        fill="#07101C" opacity="0.97"/>
+
+  <!-- Wisps of mist / clouds -->
+  <ellipse cx="148" cy="162" rx="82"  ry="16" fill="#C8D8E8" opacity="0.055"/>
+  <ellipse cx="195" cy="157" rx="52"  ry="12" fill="#C8D8E8" opacity="0.055"/>
+  <ellipse cx="108" cy="160" rx="36"  ry="10" fill="#C8D8E8" opacity="0.05"/>
+  <ellipse cx="1050" cy="195" rx="75" ry="14" fill="#C8D8E8" opacity="0.045"/>
+  <ellipse cx="1090" cy="190" rx="48" ry="10" fill="#C8D8E8" opacity="0.045"/>
+</svg>

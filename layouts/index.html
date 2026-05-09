@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<!-- 英雄区 -->
+<section class="hero">
+  <p class="hero-eyebrow">大唐盛世 · 沉浸体验</p>
+  <h1 class="hero-title">唐人<em>一日</em>生活体验</h1>
+  <p class="hero-sub">穿越千年，在长安活过完整的一天</p>
+  <div class="hero-divider"></div>
+  <div class="hero-cta">
+    <a href="/routes/" class="btn btn-primary">选择你的路线 →</a>
+    <a href="/timeline/" class="btn btn-outline">查看今日行程</a>
+  </div>
+</section>
+
+<!-- 路线选择 -->
+<div class="section-dark">
+  <div class="section-inner">
+    <span class="section-label">五条路线</span>
+    <h2 class="section-title">同一座长安，不同的你</h2>
+    <p class="section-sub">根据你的兴趣，选择专属体验路线</p>
+    <div class="routes-grid">
+      {{ $routesSection := .Site.GetPage "section" "routes" }}
+      {{ if $routesSection }}
+        {{ range $routesSection.Pages }}
+        <a href="{{ .RelPermalink }}" class="route-card">
+          <span class="route-card-emoji">{{ .Params.emoji }}</span>
+          <div class="route-card-name">{{ .Title }}</div>
+          <div class="route-card-audience">{{ .Params.audience }}</div>
+          <div class="route-card-tags">
+            {{ range .Params.keywords }}<span class="tag">{{ . }}</span>{{ end }}
+          </div>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<!-- 时间轴预告 -->
+<section class="section preview-section">
+  <span class="section-label" style="display:block;text-align:center">从卯时到亥时</span>
+  <h2 class="section-title">19 个时间节点，一天不虚度</h2>
+  <p class="section-sub" style="text-align:center;max-width:480px;margin:0 auto 2.5rem">
+    04:45 出发，22:00 散场，大唐一日，分秒有料
+  </p>
+  <div style="text-align:center">
+    <a href="/timeline/" class="btn btn-primary">查看完整时间表 →</a>
+  </div>
+</section>
+
+{{ end }}

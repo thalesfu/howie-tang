@@ -1,0 +1,16 @@
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+title = "唐人一日生活体验"
+
+[params]
+  description = "穿越千年，在长安活过完整的一天"
+
+[[menus.main]]
+  name = "今日行程"
+  url = "/timeline/"
+  weight = 1
+
+[[menus.main]]
+  name = "选择路线"
+  url = "/routes/"
+  weight = 2

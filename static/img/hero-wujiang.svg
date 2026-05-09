@@ -1,0 +1,141 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-wj" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#120508"/>
+      <stop offset="30%"  stop-color="#3A0808"/>
+      <stop offset="60%"  stop-color="#7A1A0A"/>
+      <stop offset="85%"  stop-color="#A83010"/>
+      <stop offset="100%" stop-color="#C84818"/>
+    </linearGradient>
+    <radialGradient id="sun-wj" cx="65%" cy="58%" r="28%">
+      <stop offset="0%"   stop-color="#FFB020" stop-opacity="0.72"/>
+      <stop offset="50%"  stop-color="#E05010" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E05010" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fire-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FF8010" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF8010" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-fire">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="500" fill="url(#sky-wj)"/>
+  <rect width="1200" height="500" fill="url(#sun-wj)"/>
+
+  <!-- Setting battle-sun -->
+  <circle cx="780" cy="290" r="55" fill="#FFA020" opacity="0.6"/>
+  <circle cx="780" cy="290" r="40" fill="#FFB840" opacity="0.5"/>
+  <circle cx="780" cy="290" r="28" fill="#FFD060" opacity="0.45"/>
+
+  <!-- Dramatic far mountains – jagged peaks -->
+  <path d="M0,360 L60,255 L110,290 L180,185 L250,230 L320,155 L400,210 L470,145 L545,195 L610,135 L675,180 L740,125 L810,172 L870,120 L940,165 L1000,118 L1065,160 L1120,130 L1180,155 L1200,148 L1200,500 L0,500Z"
+        fill="#350A08" opacity="0.82"/>
+
+  <!-- Mid dramatic mountains -->
+  <path d="M0,415 L70,330 L130,365 L200,288 L270,330 L345,265 L415,305 L490,248 L560,292 L635,240 L700,278 L765,228 L835,268 L900,220 L970,262 L1040,218 L1110,255 L1175,228 L1200,240 L1200,500 L0,500Z"
+        fill="#220605" opacity="0.95"/>
+
+  <!-- Battle flags on mountain peaks -->
+  <!-- Flag 1 (left mountain) -->
+  <rect x="319" y="125" width="4" height="70" fill="#1A0504" opacity="0.92"/>
+  <path d="M323,125 L323,155 L355,140Z" fill="#9B1B1B"/>
+  <!-- Flag 2 (center peak) -->
+  <rect x="609" y="102" width="4" height="68" fill="#1A0504" opacity="0.92"/>
+  <path d="M613,102 L613,132 L645,117Z" fill="#9B1B1B"/>
+  <!-- Flag 3 (right) -->
+  <rect x="999" y="86" width="4" height="62" fill="#1A0504" opacity="0.9"/>
+  <path d="M1003,86 L1003,114 L1033,100Z" fill="#9B1B1B"/>
+  <!-- Flag 4 (far right mountain) -->
+  <rect x="1109" y="96" width="4" height="60" fill="#1A0504" opacity="0.85"/>
+  <path d="M1113,96 L1113,122 L1140,110Z" fill="#9B1B1B" opacity="0.88"/>
+
+  <!-- Watchtower / fort on a mountain ridge ~x=200 -->
+  <!-- Tower base -->
+  <rect x="155" y="258" width="80" height="60" fill="#12040A" opacity="0.92"/>
+  <!-- Battlements top -->
+  <rect x="153" y="252" width="14" height="10" fill="#12040A"/>
+  <rect x="172" y="252" width="14" height="10" fill="#12040A"/>
+  <rect x="191" y="252" width="14" height="10" fill="#12040A"/>
+  <rect x="210" y="252" width="14" height="10" fill="#12040A"/>
+  <!-- Roof -->
+  <path d="M143,258 Q195,232 247,258 L241,268 Q195,244 149,268Z" fill="#9B1B1B"/>
+  <path d="M141,256 C135,250 127,240 133,234" fill="none" stroke="#9B1B1B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M249,256 C255,250 263,240 257,234" fill="none" stroke="#9B1B1B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Tower windows (lit) -->
+  <rect x="178" y="275" width="14" height="18" rx="1" fill="#FF8010" opacity="0.45"/>
+  <rect x="202" y="275" width="14" height="18" rx="1" fill="#FF8010" opacity="0.4"/>
+
+  <!-- Warrior silhouette on ridge ~x=480 -->
+  <ellipse cx="480" cy="252" rx="9"  ry="11" fill="#0E0304"/>
+  <rect x="475" y="262" width="10"  height="30" fill="#0E0304"/>
+  <!-- Spear -->
+  <rect x="492" y="225" width="3"   height="75" fill="#0E0304"/>
+  <path d="M491,225 L494,225 L492.5,210Z" fill="#8A6A28"/>
+  <!-- Banner on spear -->
+  <path d="M494,230 L494,248 L510,239Z" fill="#9B1B1B" opacity="0.88"/>
+
+  <!-- Warrior silhouette 2 (right ridge) ~x=870 -->
+  <ellipse cx="870" cy="225" rx="9"  ry="11" fill="#0E0304"/>
+  <rect x="865" y="235" width="10"  height="28" fill="#0E0304"/>
+  <!-- Spear -->
+  <rect x="882" y="200" width="3"   height="68" fill="#0E0304"/>
+  <path d="M881,200 L884,200 L882.5,186Z" fill="#8A6A28"/>
+
+  <!-- Horse silhouette -->
+  <ellipse cx="1050" cy="265" rx="35" ry="20" fill="#0E0304" opacity="0.88"/>
+  <ellipse cx="1082" cy="258" rx="14" ry="16" fill="#0E0304" opacity="0.85"/>
+  <!-- Legs -->
+  <rect x="1023" y="282" width="6" height="22" fill="#0E0304" opacity="0.85"/>
+  <rect x="1036" y="282" width="6" height="22" fill="#0E0304" opacity="0.85"/>
+  <rect x="1060" y="282" width="6" height="22" fill="#0E0304" opacity="0.85"/>
+  <rect x="1073" y="282" width="6" height="22" fill="#0E0304" opacity="0.85"/>
+  <!-- Tail -->
+  <path d="M1015,268 C1000,272 992,285 998,295" fill="none" stroke="#0E0304" stroke-width="5" stroke-linecap="round"/>
+  <!-- Rider -->
+  <ellipse cx="1055" cy="246" rx="8"  ry="9"  fill="#0E0304" opacity="0.88"/>
+  <rect x="1050" y="254" width="10"  height="16" fill="#0E0304" opacity="0.88"/>
+
+  <!-- Camp fires (foreground, two fires) -->
+  <!-- Fire 1 -->
+  <ellipse cx="310" cy="415" rx="16" ry="6" fill="#FF6010" opacity="0.18" filter="url(#blur-fire)"/>
+  <path d="M302,418 C306,395 310,385 310,378 C314,390 318,400 318,418Z" fill="#FF8010" opacity="0.72"/>
+  <path d="M304,418 C308,400 310,392 310,385 C312,396 316,405 316,418Z" fill="#FFA020" opacity="0.68"/>
+  <path d="M307,418 C309,403 310,396 310,390 C311,400 313,408 313,418Z" fill="#FFD050" opacity="0.62"/>
+
+  <!-- Fire 2 -->
+  <ellipse cx="900" cy="420" rx="16" ry="6" fill="#FF6010" opacity="0.18" filter="url(#blur-fire)"/>
+  <path d="M892,423 C896,400 900,390 900,383 C904,395 908,405 908,423Z" fill="#FF8010" opacity="0.72"/>
+  <path d="M894,423 C898,405 900,397 900,390 C902,401 906,410 906,423Z" fill="#FFA020" opacity="0.68"/>
+  <path d="M897,423 C899,408 900,401 900,395 C901,405 903,413 903,423Z" fill="#FFD050" opacity="0.62"/>
+
+  <!-- Arrow targets (distant silhouette) -->
+  <circle cx="150" cy="370" r="14" fill="none" stroke="#3A0808" stroke-width="3" opacity="0.65"/>
+  <circle cx="150" cy="370" r="8"  fill="none" stroke="#3A0808" stroke-width="2" opacity="0.6"/>
+  <circle cx="150" cy="370" r="3"  fill="#9B1B1B" opacity="0.55"/>
+  <rect x="148" y="384" width="4"  height="35" fill="#2A0606" opacity="0.6"/>
+
+  <!-- Near foreground – dark grass hills -->
+  <path d="M0,448 L120,420 L260,442 L420,416 L580,440 L740,412 L900,438 L1060,418 L1200,432 L1200,500 L0,500Z"
+        fill="#0A0204" opacity="0.98"/>
+
+  <!-- Smoke wisps -->
+  <ellipse cx="310" cy="380" rx="22" ry="7" fill="#4A1808" opacity="0.08"/>
+  <ellipse cx="315" cy="362" rx="15" ry="5" fill="#4A1808" opacity="0.06"/>
+  <ellipse cx="900" cy="385" rx="22" ry="7" fill="#4A1808" opacity="0.075"/>
+  <ellipse cx="905" cy="367" rx="14" ry="5" fill="#4A1808" opacity="0.055"/>
+
+  <!-- Dust clouds (battle atmosphere) -->
+  <ellipse cx="640" cy="400" rx="90" ry="18" fill="#5A2010" opacity="0.055"/>
+  <ellipse cx="680" cy="388" rx="60" ry="12" fill="#5A2010" opacity="0.045"/>
+
+  <!-- Scattered embers in sky -->
+  <circle cx="240" cy="195" r="1.5" fill="#FFA020" opacity="0.6"/>
+  <circle cx="380" cy="162" r="1.2" fill="#FF8010" opacity="0.55"/>
+  <circle cx="520" cy="178" r="1.0" fill="#FFA020" opacity="0.5"/>
+  <circle cx="680" cy="155" r="1.5" fill="#FF8010" opacity="0.58"/>
+  <circle cx="990" cy="168" r="1.2" fill="#FFA020" opacity="0.52"/>
+  <circle cx="1100" cy="148" r="1.0" fill="#FF8010" opacity="0.48"/>
+</svg>

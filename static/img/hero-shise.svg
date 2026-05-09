@@ -1,0 +1,181 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-ss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0C0818"/>
+      <stop offset="40%"  stop-color="#1A1030"/>
+      <stop offset="75%"  stop-color="#2A1848"/>
+      <stop offset="100%" stop-color="#1E1234"/>
+    </linearGradient>
+    <radialGradient id="moon-ss" cx="75%" cy="22%" r="24%">
+      <stop offset="0%"   stop-color="#E8D0F0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#E8D0F0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lantern-ss" cx="50%" cy="40%" r="50%">
+      <stop offset="0%"   stop-color="#F8D890" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F8B040" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pavilion-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F8C860" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F8C860" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- Sky – deep indigo night -->
+  <rect width="1200" height="500" fill="url(#sky-ss)"/>
+  <rect width="1200" height="500" fill="url(#moon-ss)"/>
+
+  <!-- Moon -->
+  <circle cx="900" cy="110" r="46" fill="#F0E4F8" opacity="0.94"/>
+  <circle cx="883" cy="98"  r="42" fill="#1A1030" opacity="0.2"/>
+
+  <!-- Stars -->
+  <circle cx="80"   cy="50"  r="1.0" fill="#D8C8F0" opacity="0.8"/>
+  <circle cx="200"  cy="32"  r="0.8" fill="#D8C8F0" opacity="0.7"/>
+  <circle cx="350"  cy="68"  r="1.2" fill="#D8C8F0" opacity="0.75"/>
+  <circle cx="490"  cy="44"  r="0.9" fill="#D8C8F0" opacity="0.65"/>
+  <circle cx="620"  cy="26"  r="1.1" fill="#D8C8F0" opacity="0.8"/>
+  <circle cx="720"  cy="62"  r="0.8" fill="#D8C8F0" opacity="0.6"/>
+  <circle cx="1060" cy="40"  r="1.4" fill="#D8C8F0" opacity="0.78"/>
+  <circle cx="1155" cy="72"  r="0.9" fill="#D8C8F0" opacity="0.65"/>
+  <circle cx="155"  cy="105" r="0.8" fill="#D8C8F0" opacity="0.55"/>
+  <circle cx="440"  cy="92"  r="1.0" fill="#D8C8F0" opacity="0.6"/>
+  <circle cx="810"  cy="48"  r="0.8" fill="#D8C8F0" opacity="0.72"/>
+  <circle cx="980"  cy="82"  r="1.0" fill="#D8C8F0" opacity="0.55"/>
+  <circle cx="1120" cy="105" r="0.8" fill="#D8C8F0" opacity="0.5"/>
+
+  <!-- Far mountains – soft purple silhouettes -->
+  <path d="M0,350 L90,268 L180,305 L300,222 L440,278 L560,208 L680,258 L800,195 L930,242 L1060,200 L1200,228 L1200,500 L0,500Z"
+        fill="#1E1440" opacity="0.6"/>
+
+  <!-- Mid mountains -->
+  <path d="M0,400 L110,328 L220,365 L340,290 L460,335 L590,268 L710,315 L820,260 L950,305 L1070,262 L1200,288 L1200,500 L0,500Z"
+        fill="#140E2A" opacity="0.82"/>
+
+  <!-- Elegant teahouse / banquet hall – center -->
+  <!-- Lower platform -->
+  <rect x="450" y="260" width="300" height="120" fill="#0C0818" opacity="0.92"/>
+  <!-- Steps -->
+  <rect x="560" y="374" width="80"  height="8"  rx="1" fill="#2A1848" opacity="0.85"/>
+  <rect x="568" y="380" width="64"  height="7"  rx="1" fill="#221438" opacity="0.82"/>
+  <!-- Window glow (interior warm light) -->
+  <rect x="468" y="285" width="36" height="48" rx="3" fill="url(#pavilion-light)"/>
+  <rect x="468" y="285" width="36" height="48" rx="3" fill="#F8C860" opacity="0.22" filter="url(#soft)"/>
+  <rect x="522" y="278" width="36" height="55" rx="3" fill="#F8C860" opacity="0.25" filter="url(#soft)"/>
+  <rect x="642" y="278" width="36" height="55" rx="3" fill="#F8C860" opacity="0.25" filter="url(#soft)"/>
+  <rect x="696" y="285" width="36" height="48" rx="3" fill="#F8C860" opacity="0.22" filter="url(#soft)"/>
+  <!-- Colonnade -->
+  <rect x="458" y="248" width="9"  height="130" fill="#0C0818"/>
+  <rect x="500" y="248" width="9"  height="130" fill="#0C0818"/>
+  <rect x="548" y="248" width="9"  height="130" fill="#0C0818"/>
+  <rect x="643" y="248" width="9"  height="130" fill="#0C0818"/>
+  <rect x="691" y="248" width="9"  height="130" fill="#0C0818"/>
+  <rect x="733" y="248" width="9"  height="130" fill="#0C0818"/>
+  <!-- Main roof -->
+  <path d="M424,250 Q600,198 776,250 L769,263 Q600,212 431,263Z" fill="#3A1E5A"/>
+  <path d="M422,248 C415,241 405,228 412,221" fill="none" stroke="#3A1E5A" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M778,248 C785,241 795,228 788,221" fill="none" stroke="#3A1E5A" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Gold roof edge -->
+  <path d="M424,250 Q600,198 776,250" fill="none" stroke="#C4972A" stroke-width="2" opacity="0.65"/>
+  <!-- Upper roof -->
+  <path d="M448,222 Q600,175 752,222 L746,233 Q600,186 454,233Z" fill="#2E1848"/>
+  <path d="M446,220 C440,213 431,202 438,196" fill="none" stroke="#2E1848" stroke-width="3" stroke-linecap="round"/>
+  <path d="M754,220 C760,213 769,202 762,196" fill="none" stroke="#2E1848" stroke-width="3" stroke-linecap="round"/>
+  <path d="M448,222 Q600,175 752,222" fill="none" stroke="#C4972A" stroke-width="1.5" opacity="0.55"/>
+  <!-- Topmost small roof -->
+  <path d="M472,196 Q600,155 728,196 L722,205 Q600,164 478,205Z" fill="#261440"/>
+  <path d="M470,194 C465,188 458,179 464,173" fill="none" stroke="#261440" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M730,194 C735,188 742,179 736,173" fill="none" stroke="#261440" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Silhouettes of diners/musicians inside building (through windows) -->
+  <ellipse cx="487" cy="305" rx="6"  ry="7"  fill="#1A0E30" opacity="0.7"/>
+  <rect x="484" y="311" width="6"   height="16" fill="#1A0E30" opacity="0.7"/>
+  <ellipse cx="560" cy="298" rx="5"  ry="6"  fill="#1A0E30" opacity="0.65"/>
+  <!-- Musician with instrument -->
+  <ellipse cx="625" cy="295" rx="6"  ry="7"  fill="#1A0E30" opacity="0.65"/>
+  <rect x="622" y="301" width="6"   height="15" fill="#1A0E30" opacity="0.65"/>
+  <rect x="630" y="292" width="2"   height="18" fill="#1A0E30" opacity="0.6"/>
+
+  <!-- Plum blossom trees – left and right -->
+  <!-- Left plum tree -->
+  <path d="M160,360 C155,320 148,285 160,250" fill="none" stroke="#1A0E28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M160,310 C138,288 120,268 118,240"  fill="none" stroke="#1A0E28" stroke-width="5" stroke-linecap="round"/>
+  <path d="M160,295 C185,270 200,250 208,225"  fill="none" stroke="#1A0E28" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160,330 C135,315 115,305 100,285"  fill="none" stroke="#1A0E28" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M160,280 C182,258 200,242 215,218"  fill="none" stroke="#1A0E28" stroke-width="3" stroke-linecap="round"/>
+  <!-- Plum blossoms (left) -->
+  <circle cx="120" cy="238" r="10" fill="#D870A8" opacity="0.62"/>
+  <circle cx="100" cy="283" r="8"  fill="#E890B8" opacity="0.58"/>
+  <circle cx="210" cy="223" r="9"  fill="#D870A8" opacity="0.6"/>
+  <circle cx="208" cy="248" r="7"  fill="#E890B8" opacity="0.55"/>
+  <circle cx="118" cy="262" r="8"  fill="#D870A8" opacity="0.56"/>
+  <circle cx="145" cy="248" r="10" fill="#E890B8" opacity="0.52"/>
+  <circle cx="168" cy="228" r="8"  fill="#D870A8" opacity="0.58"/>
+  <circle cx="185" cy="268" r="7"  fill="#E890B8" opacity="0.5"/>
+
+  <!-- Right plum tree -->
+  <path d="M1040,360 C1045,318 1052,282 1040,248" fill="none" stroke="#1A0E28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1040,308 C1062,285 1082,262 1086,235" fill="none" stroke="#1A0E28" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1040,292 C1015,268 1000,248 992,222"  fill="none" stroke="#1A0E28" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1040,328 C1065,312 1085,300 1100,278" fill="none" stroke="#1A0E28" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Plum blossoms (right) -->
+  <circle cx="1088" cy="232" r="10" fill="#D870A8" opacity="0.62"/>
+  <circle cx="1100" cy="275" r="8"  fill="#E890B8" opacity="0.58"/>
+  <circle cx="990"  cy="220" r="9"  fill="#D870A8" opacity="0.6"/>
+  <circle cx="993"  cy="248" r="7"  fill="#E890B8" opacity="0.55"/>
+  <circle cx="1018" cy="255" r="9"  fill="#D870A8" opacity="0.56"/>
+  <circle cx="1062" cy="248" r="7"  fill="#E890B8" opacity="0.52"/>
+  <circle cx="1040" cy="268" r="8"  fill="#D870A8" opacity="0.5"/>
+
+  <!-- Falling petals (plum) -->
+  <ellipse cx="280"  cy="300" rx="4" ry="6" fill="#E890B8" opacity="0.45" transform="rotate(-25,280,300)"/>
+  <ellipse cx="310"  cy="340" rx="3" ry="5" fill="#D870A8" opacity="0.38" transform="rotate(15,310,340)"/>
+  <ellipse cx="360"  cy="320" rx="3" ry="5" fill="#E890B8" opacity="0.4"  transform="rotate(-10,360,320)"/>
+  <ellipse cx="850"  cy="305" rx="4" ry="6" fill="#D870A8" opacity="0.42" transform="rotate(20,850,305)"/>
+  <ellipse cx="900"  cy="345" rx="3" ry="5" fill="#E890B8" opacity="0.38" transform="rotate(-15,900,345)"/>
+  <ellipse cx="950"  cy="328" rx="3" ry="5" fill="#D870A8" opacity="0.4"  transform="rotate(8,950,328)"/>
+
+  <!-- Lanterns strung between teahouse and trees -->
+  <path d="M210,268 Q420,235 450,255" fill="none" stroke="#3A1848" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="270" cy="260" rx="5" ry="7" fill="#F8B020" opacity="0.78"/>
+  <ellipse cx="270" cy="260" rx="5" ry="7" fill="url(#lantern-ss)" filter="url(#soft)"/>
+  <line x1="270" y1="253" x2="270" y2="248" stroke="#5A2A18" stroke-width="1.2"/>
+  <ellipse cx="330" cy="252" rx="5" ry="7" fill="#F8A010" opacity="0.72"/>
+  <ellipse cx="390" cy="248" rx="5" ry="7" fill="#F8B020" opacity="0.68"/>
+
+  <path d="M750,255 Q980,235 990,268" fill="none" stroke="#3A1848" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="820" cy="250" rx="5" ry="7" fill="#F8B020" opacity="0.72"/>
+  <ellipse cx="880" cy="245" rx="5" ry="7" fill="#F8A010" opacity="0.68"/>
+  <ellipse cx="940" cy="248" rx="5" ry="7" fill="#F8B020" opacity="0.65"/>
+
+  <!-- Garden path / stone pavement -->
+  <ellipse cx="600" cy="420" rx="140" ry="18" fill="#1E1438" opacity="0.55"/>
+  <!-- Stone tiles -->
+  <rect x="530" y="408" width="28" height="14" rx="2" fill="#2A1848" opacity="0.45"/>
+  <rect x="565" y="408" width="28" height="14" rx="2" fill="#241440" opacity="0.42"/>
+  <rect x="600" y="408" width="28" height="14" rx="2" fill="#2A1848" opacity="0.45"/>
+  <rect x="635" y="408" width="28" height="14" rx="2" fill="#241440" opacity="0.42"/>
+  <rect x="547" y="420" width="28" height="12" rx="2" fill="#241440" opacity="0.4"/>
+  <rect x="582" y="420" width="28" height="12" rx="2" fill="#2A1848" opacity="0.42"/>
+  <rect x="617" y="420" width="28" height="12" rx="2" fill="#241440" opacity="0.4"/>
+
+  <!-- Near foreground garden hedge -->
+  <path d="M0,455 L140,432 L290,450 L460,428 L620,448 L790,426 L950,445 L1100,428 L1200,440 L1200,500 L0,500Z"
+        fill="#080614" opacity="0.97"/>
+
+  <!-- Garden rocks / gongshi left and right -->
+  <path d="M65,425 C62,400 55,390 60,375 C70,388 78,402 75,425Z" fill="#1A1030" opacity="0.78"/>
+  <path d="M80,430 C76,408 70,396 74,380 C84,394 90,410 88,430Z" fill="#1A1030" opacity="0.72"/>
+  <path d="M1120,428 C1117,404 1110,392 1115,377 C1125,390 1132,406 1130,428Z" fill="#1A1030" opacity="0.75"/>
+  <path d="M1135,432 C1132,410 1126,398 1130,383 C1140,396 1146,414 1144,432Z" fill="#1A1030" opacity="0.7"/>
+
+  <!-- Mist along ground -->
+  <ellipse cx="600" cy="440" rx="380" ry="20" fill="#D8C8F0" opacity="0.038"/>
+  <ellipse cx="500" cy="432" rx="250" ry="14" fill="#D8C8F0" opacity="0.032"/>
+</svg>
