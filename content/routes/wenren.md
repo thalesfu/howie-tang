@@ -4,7 +4,7 @@ emoji: "📜"
 audience: "30岁以上，历史文化爱好者"
 keywords: ["诗词", "书法", "茶道", "沉浸"]
 tagline: "不只是游客，今日你是唐人"
-hero_image: "/img/wenren.png"
+hero_image: "/img/wenren.webp"
 hero_overlay: "heavy"
 gift: "书法装裱作品一幅 + 今日联句诗册 + 茶饼一枚"
 schedule:

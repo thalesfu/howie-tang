@@ -4,7 +4,7 @@ emoji: "🎭"
 audience: "18–30岁，朋友聚会·情侣出游"
 keywords: ["出片", "社交", "微醺", "热闹"]
 tagline: "今天，你是长安最靓的仔"
-hero_image: "/img/shejiaoju.png"
+hero_image: "/img/shejiaoju.webp"
 gift: "专属滤镜照片包 + 今日唐人档案 + 飞花令锦旗一面"
 schedule:
   - time_tc: "卯时 05-07"

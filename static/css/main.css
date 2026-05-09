@@ -111,7 +111,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- 首页英雄区 ---------- */
 .hero {
   min-height: 100vh;
-  background: var(--ink) url('/img/home.png') center / cover no-repeat;
+  background: var(--ink) url('/img/home.webp') center / cover no-repeat;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   text-align: center; padding: 2rem; position: relative; overflow: hidden;

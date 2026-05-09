@@ -4,7 +4,7 @@ emoji: "👨‍👩‍👧"
 audience: "亲子家庭，6岁以上孩子"
 keywords: ["亲子互动", "趣味", "安全", "有收获"]
 tagline: "带娃穿越，比迪士尼更有料"
-hero_image: "/img/yijiaqing.png"
+hero_image: "/img/yijiaqing.webp"
 gift: "孩子「大唐小达人」认证证书 + 亲子合照相册 + 全程手作作品打包带走"
 schedule:
   - time_tc: "卯时 05-07"

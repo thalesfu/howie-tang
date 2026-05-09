@@ -4,7 +4,7 @@ emoji: "🏹"
 audience: "20–40岁，喜欢运动挑战"
 keywords: ["竞技", "体能", "团队", "热血"]
 tagline: "今日，你是长安城最能打的那个"
-hero_image: "/img/wujiang.png"
+hero_image: "/img/wujiang.webp"
 hero_overlay: "heavy"
 gift: "「唐人武将王」专属铭牌 + 全天竞技剪辑视频 + 校场纪念章"
 schedule:

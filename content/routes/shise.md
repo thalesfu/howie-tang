@@ -4,7 +4,7 @@ emoji: "🍶"
 audience: "25–45岁，吃货·生活方式爱好者"
 keywords: ["美食", "器物", "慢节奏", "精致"]
 tagline: "用舌头丈量大唐的宽度"
-hero_image: "/img/datangshiyun.png"
+hero_image: "/img/datangshiyun.webp"
 hero_overlay: "heavy"
 gift: "今日完整食谱手册 + 自制点心六枚 + 唐代复刻食器一套"
 schedule:
